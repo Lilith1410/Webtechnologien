@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Eine kurze Geschichte von fast allem</title>
+		<link href="main.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+
+	<body>
+		<h1>Überblick aller in Vorlesung 1 vorgestellten HTML-Tags</h1>
+		
+		<article>
+			<h2>Absätze und Zeilenumbrüche</h2>
+			<section>
+				<h3>Beschreibung</h3>
+				<p>Absätze werden in HTML-Dokumenten sehr häufig verwendet.</p>
+				<p>Dabei ist es eigentlich eher unüblich, einen Zeilenumbruch<br>innerhalb eines Absatzes zu machen machen …<br><br>… oder gar eine Leerzeile!</p>
+			</section>
+			<section>
+				<h3>Code</h3>
+				<code>&lt;p&gt;Ich bin ein Beispiel!&lt;/p&gt;</code>
+			</section>
+			<section>
+				<h3>Beispiel</h3>
+				<p>
+					Dies ist ein sehr langer Absatz, welcher über mehrere Zeilen geht.
+					Um dies auch bei größeren Monitoren zu bewerkstelligen, müssen wir das Ganze deutlich in die Länge ziehen.
+					Dabei kann es z.B. auch sehr hilfreich sein, einfach nur belanglose Dinge zu erzählen, einfach nur, um die Fläche zu füllen und Text zu erzeugen.
+					Davon sollten Sie sich keinenfalls beim Arbeiten ablenken lassen, auch wenn Sie alternativ auch einfach einen Blindtext wie z.B. "Lorem ipsum dolor sit amet, consectetur adipisici elit, …" verwenden können.
+				</p>
+				<p>Gefolgt von einem weiteren, kürzeren Absatz, kommt der erste Absatz erst voll zur Geltung!</p>
+			</section>
+		</article>
+		
+		<article>
+			<h2>Überschriften</h2>
+			<section>
+				<h3>Beschreibung</h3>
+				<p>
+					Überschriften helfen dabei, in größeren Texten die Übersicht zu behalten und in wenigen Worten zusammenzufassen, worum es im zugehörigen Abschnitt geht.
+				</p>
+			</section>
+			<section>
+				<h3>Code</h3>
+				<code>
+					&lt;h1&gt;Überschrift 1. Ordnung&lt;/h1&gt;<br>
+					&lt;h2&gt;Überschrift 2. Ordnung&lt;/h2&gt;<br>
+					&lt;h3&gt;Überschrift 3. Ordnung&lt;/h3&gt;<br>
+					&lt;h4&gt;Überschrift 4. Ordnung&lt;/h4&gt;<br>
+					&lt;h5&gt;Überschrift 5. Ordnung&lt;/h5&gt;<br>
+					&lt;h6&gt;Überschrift 6. Ordnung&lt;/h6&gt;<br>
+				</code>
+			</section>
+			<section>
+				<h3>Beispiel</h3>
+				
+				<h1>Überschrift 1. Ordnung</h1>
+				<h2>Überschrift 2. Ordnung</h2>
+				<h3>Überschrift 3. Ordnung</h3>
+				<h4>Überschrift 4. Ordnung</h4>
+				<h5>Überschrift 5. Ordnung</h5>
+				<h6>Überschrift 6. Ordnung</h6>
+			</section>
+		</article>
+		
+		<article>
+			<h2>Links und Bilder</h2>
+			<section>
+				<h3>Beschreibung</h3>
+				<p>
+					Links oder genauer Hyperlinks sind die Essenz des Internets, die alle Seiten zusammenhält und sowohl Nutzern, als auch Programmen in vielen Fällen überhaupt erst ermöglich, diese zu erreichen.
+					Hierbei werden besondere Zeichenketten genutzt: Ein sog. URL oder auch Universal Resource Locator, welcher neben dem Protokoll oder Schema, dem Zielhost und dem Pfad auch noch weitere Informationen wie z.B. Benutzername, Kennwort, Port, Query und Fragment einer Zielressource enthalten kann.
+				</p>
+				<p>
+					Häufig werden auch Bilder als visuelle Repräsentation von Links genutzt, z.B. bei Thumbnails die auf eine größere Version eines Bildes verlinken.
+					Das <code>a</code> im entsprechenden HTML-Tag steht dabei für das Englische Wort anchor (dt. Anker) und kann neben einer Hyperlinkreference (<code>href</code>) u.a. in seinem <code>rel</code>-Attribut (eng. Relation; dt. Verhältnis/Zusammenhang) auch mitteilen, in welchem Verhältnis das aktuelle Dokument zur Zielressource steht.
+				</p>
+				<p>
+					Bilder sollten, soweit sinnvoll möglich, immer einen Text in ihrem <code>alt</code>-Attribut enthalten, welcher das Bild oder (im Fall von Bildern, die als Links genutzt werden) das Ziel des Links beschreibt.
+					Dies ist besonders wichtig, da dieser Text nicht nur gezeigt wird, wenn das Bild (noch) nicht angezeigt werden kann, sondern auch, wenn das Dokument z.B. von Screen Readern vorgelesen wird.
+				</p>
+			</section>
+			<section>
+				<h3>Code</h3>
+				<code>
+					Über diesen &lt;a href="https://validator.w3.org"&gt;Link&lt;/a&gt; gelangen Sie zum Validator des W3C!<br>
+					&lt;img src="https://www.w3.org/Icons/WWW/w3c_home_nb" alt="Logo des W3C"&gt;
+				</code>
+			</section>
+			<section>
+				<h3>Beispiel</h3>
+				
+				<p>
+					Über diesen <a href="https://validator.w3.org">Link</a> gelangen Sie zum Validator des W3C!
+				</p>
+				<p>
+					<img src="https://www.w3.org/Icons/WWW/w3c_home_nb" alt="Logo des W3C">
+				</p>
+			</section>
+		</article>
+		
+		<article>
+			<h2>Tabellen und Formulare</h2>
+			<section>
+				<h3>Beschreibung</h3>
+				<p>
+					In früheren Zeiten wurden Tabellen häufig auch als Designelemente missbraucht, um z.B. das traditionelle Seitenlayout mit dem Logo in der linken, oberen Ecke, einem Banner oben mittig, einem Menü am linken oder rechten Rand, einem Footer und dem Contentbereich in der Mitte der Seite zu realisieren.
+					Dies ist eine Praxis, die heutzutage Dank CSS und HTML5 kaum mehr anzutreffen ist und für die Tabellen eigentlich auch nie wirklich gedacht waren.
+				</p>
+				<p>
+					Tabellen sollten stattdessen ausschließlich dazu genutzt werden, tabellarische Inhalte darzustellen (z.B. Statistiken, Auflistungen mit mehreren Attributen, …).
+					Dabei können sie manchmal z.B. in der Fußzeile auch ein Formular enthalten, mit Hilfe dessen neue Einträge erstellt werden können.
+				</p>
+			</section>
+			<section>
+				<h3>Code</h3>
+				<pre><code>
+&lt;form action="#einwohner"&gt;
+	&lt;table id="einwohner"&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th&gt;Vorname&lt;/th&gt;
+				&lt;th&gt;Nachname&lt;/th&gt;
+				&lt;th&gt;Wohnort&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Max&lt;/td&gt;
+				&lt;td&gt;Mustermann&lt;/td&gt;
+				&lt;td&gt;Musterstadt&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;Erika&lt;/td&gt;
+				&lt;td&gt;Musterfrau&lt;/td&gt;
+				&lt;td&gt;Musterstadt&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+		&lt;tfoot&gt;
+			&lt;tr&gt;
+				&lt;td&gt;&lt;label for="vorname"&gt;Vorname:&lt;/label&gt;&lt;input type="text" name="vorname" id="vorname"&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;label for="nachname"&gt;Nachname:&lt;/label&gt;&lt;input type="text" name="nachname" id="nachname"&gt;&lt;/td&gt;
+				&lt;td&gt;&lt;label for="wohnort"&gt;Wohnort:&lt;/label&gt;&lt;input type="text" name="wohnort" id="wohnort"&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td colspan="3"&gt;&lt;button type="submit"&gt;Eintragen&lt;/button&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tfoot&gt;
+	&lt;/table&gt;
+&lt;/form&gt;
+				</code></pre>
+			</section>
+			<section>
+				<h3>Beispiel</h3>
+				
+				<form action="#einwohner">
+					<table id="einwohner">
+						<thead>
+							<tr>
+								<th>Vorname</th>
+								<th>Nachname</th>
+								<th>Wohnort</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Max</td>
+								<td>Mustermann</td>
+								<td>Musterstadt</td>
+							</tr>
+							<tr>
+								<td>Erika</td>
+								<td>Musterfrau</td>
+								<td>Musterstadt</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td><label for="vorname">Vorname:</label><input type="text" name="vorname" id="vorname"></td>
+								<td><label for="nachname">Nachname:</label><input type="text" name="nachname" id="nachname"></td>
+								<td><label for="wohnort">Wohnort:</label><input type="text" name="wohnort" id="wohnort"></td>
+							</tr>
+							<tr>
+								<td colspan="3"><button type="submit">Eintragen</button></td>
+							</tr>
+						</tfoot>
+					</table>
+				</form>
+			</section>
+		</article>
+		<footer>
+			Übungen zu Webtechnologien
+		</footer>
+	</body>
+</html>
