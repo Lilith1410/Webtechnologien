@@ -1,27 +1,31 @@
 /* Stylesheet für die Musterlösungen der Aufgabe 1 */ 
 
-/*a {text-decoration: none; } */ /* Unterstreichung eines Hyperlinks */ 
-
+/* links sind grün und linie über und unter dem link */ 
 a { 
 	color: #01DF01; 
 	text-decoration: overline underline; 
 }
 
+/* zeilen der tabelle sollen grau werden */ 
 table, td, tr{ 
 	border-color: #696969;
 }
 
+/* generelle Eigenschaften der Tabellen: keine doppelten rahmen;
+3 px breite rahmen, restliche innen liegenden linien nur normale breite */
 table { 
 	border-collapse: collapse;  
 	border-width: 3px; 
 }
 
+/* eigenschaften von tabellen header: ; */ 
 th { 
 	background-color: green; 
 	color: white; 
 	font-weight: bold; 
 }
 
+/* alle texte des bodys sollen serifenfrei sein */ 
 body { 
 	font-family: "Lucida Sans", "Arial", sanf-serif; 
 }
